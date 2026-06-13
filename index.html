@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JNTU Academic Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🎓 JNTU Academic Hub</h1>
+<p>SGPA • CGPA • Percentage Calculator</p>
+
+<div class="card">
+  <h1>SGPA Calculator</h1>
+
+  <div id="subjects">
+    <div>
+      <input type="text" placeholder="Subject Name">
+      <input type="number" placeholder="Credits" class="credits">
+
+      <select class="grade">
+        <option value="10">O</option>
+        <option value="9">A+</option>
+        <option value="8">A</option>
+        <option value="7">B+</option>
+        <option value="6">B</option>
+        <option value="5">C</option>
+        <option value="0">F</option>
+      </select>
+    </div>
+  </div>
+
+  <button onclick="addSubject()">Add Subject</button>
+  <button onclick="calculateSGPA()">Calculate SGPA</button>
+
+  <h2 id="result"></h2>
+</div>
+
+<div class="card">
+  <h1>CGPA Calculator</h1>
+
+  <div id="semesters">
+    <div>
+      <input type="number" placeholder="Semester SGPA" class="sgpa">
+      <input type="number" placeholder="Semester Credits" class="semCredits">
+    </div>
+  </div>
+
+  <button onclick="addSemester()">Add Semester</button>
+  <button onclick="calculateCGPA()">Calculate CGPA</button>
+
+  <h2 id="cgpaResult"></h2>
+</div>
+
+<div class="card">
+  <h1>Percentage Converter</h1>
+
+  <input type="number" placeholder="Enter CGPA" id="percentageCgpa">
+
+  <button onclick="calculatePercentage()">Calculate Percentage</button>
+
+  <h2 id="percentageResult"></h2>
+</div>
+
+<footer>
+  <p>Built for JNTU Students</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
